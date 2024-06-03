@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home">
+        <div class="home_left">
+            <h3>AWARD WINNING</h3>
+            <h1>DIGITAL MARKETING AGENCY</h1>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+            <button id="contactBtn">CONTACT US</button>
+       </div>
+       <div class="home_right">
+        <img src="hero.png" alt="Hero Image">
+       </div>
+    </div>
+
+    <div id="ContactForm" class="popup">
+        <form action="https://getform.io/f/zazkjpeb" method="POST">
+            <h1>Talk to us</h1>
+            <div class="input-container">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Work email*</label>
+            </div>
+            
+            <div class="name-container">
+                <div class="input-container">
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="fname">First name*</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="lname" name="lname" required>
+                    <label for="lname">Last name*</label>
+                </div>
+            </div>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+            </div>
+            
+            <button type="submit">Contact Us</button>
+        </form>
+    </div>
+
+    <!-- slider section -->
+    <div class="slider">
+        <div class="header-box">
+            <div class="left">
+                <h3>WHAT WE DO</h3>
+                <h1>SERVICE PROVIDE<br> FOR YOU</h1>
+            </div>
+            <div class="right">
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+            </div>
+        </div>
+        <div class="slider-box">
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide1.png" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide2.png" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide3.png" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide4.jpeg" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide5.jpg" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="card">
+                    <img src="slide6.jpg" alt="">
+                    <div class="hover-content">
+                        <img src="icons8-code-64.png" alt="">
+                        <h3>Web Development</h3>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://fylehq.com" target="_blank">Read more &rarr;</a>
+                    </div>   
+                </div>
+            </div>   
+        </div>
+        <div class="dot-indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+<!-- project section -->
+<div class="project">
+    <div class="head">
+        <div class="top">
+            <h3>WHY CHOOSE US</h3>
+            <h1>WHY WE ARE BEST</h1>
+        </div>
+        <div class="category">
+           <div class="box">
+                <img src="1@2x.png" alt="">
+                <h3>Clarified Vision & Target</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+           </div>
+           <div class="box">
+                <img src="2@2x.png" alt="">
+                <h3>High Performance</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+           </div>
+           <div class="box">
+                <img src="3@2x.png" alt="">
+                <h3>Maintain Security</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+           </div>
+           <div class="box">
+                <img src="4.png" alt="">
+                <h3>Better Strategy & Quality</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+           </div>
+        </div>
+    </div>
+
+    <div class="our_project">
+        <div class="top">
+            <h3>OUR PROJECT</h3>
+            <h1>WHY WE ARE BEST</h1>
+        </div>
+        <div class="project-section">
+            <div class="image-section">
+                <img id="main-image" src="image1.png" alt="">
+            </div>
+            <div class="content-section">
+                <ul>
+                    <li onclick="changeImage('image1.png')"><h4>Genderless Kei – Japan’s Hot</h4><p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p></li>
+                    <li onclick="changeImage('image2.jpg')"><h4>Better Strategy & Quality</h4><p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p></li>
+                    <li onclick="changeImage('image3.jpg')"><h4>Genderless Kei – Japan’s Hot</h4><p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- highlight section -->
+<div class="hightlight">
+    <div class="top">
+        <h3>EXPERTS GROWTS</h3>
+        <h1>OUR COMPANY GROWTH</h1>
+    </div>
+
+    <div class="hightlight-section">
+        <div class="card-section">
+            <img src="heart (2).png" alt="">
+            <h3>199+</h3>
+            <p>Staticfied Customers</p>
+        </div>
+        <div class="card-section">
+            <img src="clock (3).png" alt="">
+            <h3>1591+</h3>
+            <p>Days Of Operation</p>
+        </div>
+        <div class="card-section">
+            <img src="Path 4402.png" alt="">
+            <h3>283+</h3>
+            <p>Complete Project</p>
+        </div>
+        <div class="card-section">
+            <img src="Path 4406.png" alt="">
+            <h3>5+</h3>
+            <p>Win Awards</p>
+        </div>
+    </div>
+</div>
+<!-- bottom section -->
+<div class="bottom">
+    <div class="top">
+        <h3>CLIENT'S FEEDBACK</h3>
+        <h1>PEOPLE SAY'S ABOUT US!</h1>
+    </div>
+    <div class="feedback">
+        <img src="Quotation.png" alt="Quotation">
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
+        <div class="author">
+            <h4>JANNAT TUMPA</h4>
+            <h3>- COO, AMERIMAR ENTERPRISES, INC.</h3>
+        </div>
+    </div>
+</div>
+<div class="footer">
+        <img src="Group 500.png" alt="">
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

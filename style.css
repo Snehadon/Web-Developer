@@ -1,0 +1,515 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.home_left {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.home_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home h3 {
+    font: normal normal 600 28px 'Cormorant SC', serif;
+    color: #FF3147;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font: normal normal bold 60px/80px 'Cormorant SC', serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font: normal normal normal 16px/30px 'Poppins', sans-serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.home button {
+    width: 160px;
+    height: 50px;
+    background: #FF3147;
+    border-radius: 2px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.home img {
+    max-width: 100%;
+    width: 500px;
+    height: 550px;
+    padding-right: 150px;
+    display: block;
+}
+
+
+/* form */
+.popup {
+    display: none;
+    background-color: #F1F1F1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: none;
+}
+
+label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 16px;
+    color: #6F718F99;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+input[type="email"]:hover + label,
+input[type="text"]:hover + label {
+    top: -20px;
+    font-size: 12px;
+    color: #6F718F99;
+}
+
+input[type="email"]:focus + label,
+input[type="text"]:focus + label,
+input[type="email"]:valid + label,
+input[type="text"]:valid + label {
+    top: -20px;
+    font-size: 12px;
+    color: #6F718F99;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-container label {
+    font-weight: normal;
+    color: #616678;
+    position: relative;
+}
+
+button {
+    width: 100%;
+    background-color: #FF336f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc2959;
+}
+/* slider section */
+
+.slider {
+    background: #f7f5f5;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f7f5f5;
+}
+
+.left {
+    flex: 0.8;
+    padding-left: 100px;
+    padding-right: 70px;
+}  
+
+.right {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 300px;
+}
+
+.left h3 {
+    font: normal normal 600 24px/26px Cormorant SC;
+    color: #FF3147;
+    margin-bottom: 10px;
+}
+
+.left h1 {
+    font: normal normal bold 45px/65px Cormorant SC;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font: normal normal normal 16px/30px 'Poppins', sans-serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.slider-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 50px;
+    gap: 1.5rem;
+    padding-left: 100px;
+}
+
+.card {
+    position: relative;
+    width: 370px;
+    height: 526px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card .hover-content {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF3147;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card:hover .hover-content {
+    opacity: 1;
+}
+
+.hover-content img{
+    width: 57px;
+height: 57px;
+}
+.hover-content h3 {
+    font: normal normal 600 24px/26px Cormorant SC;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.hover-content p{
+    text-align: center;
+font: normal normal normal 16px/30px Poppins;
+color: #FFFFFF;
+}
+
+
+.hover-content a {
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    background: #F4F4F4;
+    padding: 10px 20px;
+    color: #FF3147;
+    text-decoration: none;
+    font: normal normal 600 14px/26px Poppins;
+    width: 185px;
+height: 50px;
+}
+
+.dot-indicators {
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #f92020;
+    border-color: #f92020;
+}
+
+/* project section */
+.project{
+    padding-left: 90px;
+    display: grid;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.head{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+}
+.top{
+    margin-bottom: 3rem;
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+ .top h3{
+    text-align: center;
+    font: normal normal 600 24px/26px Cormorant SC;
+    letter-spacing: 0px;
+    color: #FF3147;
+    justify-self: center;
+}
+
+.top h1{
+    width: 600px;
+    text-align: center;
+    font: normal normal bold 45px/65px Cormorant SC;
+    color: #000000;
+    justify-self: center;
+}
+
+.category{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.category .box img{
+    width: 60px;
+}
+.category .box h3{
+    width: 243px;
+    height: 28px;
+    font: normal normal medium 20px/80px Poppins;
+}
+.category .box p{
+    width: 256px;
+height: 75px;
+font: normal normal normal 16px/26px Poppins;
+}
+
+.project-section{
+    display: flex;
+    gap: 1rem;
+}
+
+.image-section{
+    margin-right: 20px;
+}
+
+.image-section img{
+    width: 820px;
+    height: 500px;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-section li {
+    padding: 10px;
+    cursor: pointer;
+    width: 400px;
+    height: 165px;
+    background-color: #F6F6F6;
+}
+
+.content-section li:hover {
+    background-color: #FF3147;
+    color: white;
+}
+
+.content-section li h4{
+    width: 293px;
+    height: 28px;
+    margin-top: 1.5rem;
+}
+
+.content-section li p{
+    width: 293px;
+height: 79px;
+font: normal normal normal 16px/28px Poppins;
+}
+
+/* hightlight section */
+.hightlight{
+    background-color:#FAFAFA;
+    padding-left: 100px;
+    padding-right: 8px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.hightlight-section{
+    display: flex;
+    gap: 3rem;
+}
+.card-section{
+    width: 270px;
+height: 220px;
+background-color: #FFFFFF;
+display: grid;
+}
+.card-section img{
+    width: 30px;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+.card-section h3{
+    text-align: center;
+    font: normal normal 300 60px/65px Poppins;
+}
+
+.card-section p{
+text-align: center;
+font: normal normal 300 20px Poppins;
+}
+
+.card-section:hover{
+    box-shadow: 3px 6px 20px #672C2C1F;
+}
+
+/* bottom section */
+
+.bottom{
+    padding-left: 100px;
+    padding-right: 8px;
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.feedback img{
+    width: 64px;
+    height: 45px;
+    position: relative;
+    left: -380px;
+    top: -8px;
+}
+
+.feedback p {
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    font: normal normal normal 20px/34px 'Poppins', sans-serif;
+    position: relative;
+    top: -45px; 
+    z-index: 1;
+}
+
+.author {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: -30px;
+    position: relative;
+}
+
+.author h4 {
+    font: normal normal bold 20px/34px Poppins;
+    color: #FF3147;
+}
+
+.author h3 {
+    font: normal normal 300 20px/34px Poppins;
+     color: #808080;
+}
+
+.footer{
+    height: 150px;
+    background-color: red;
+    display: grid;
+}
+
+.footer img{
+    align-self: center;
+    justify-self: center;
+    width: 800px;
+}
+
